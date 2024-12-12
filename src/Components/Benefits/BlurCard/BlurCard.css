@@ -1,0 +1,77 @@
+.blur-card {
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(to bottom, #b95287ad, #808080b0);
+    background-color: black;
+    color: white;
+    border-radius: 36px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 3rem; /* Combined margin properties */
+}
+
+.blur-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.blur-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    z-index: -1;
+}
+
+.card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;   
+}
+
+.card-text {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+}
+
+#card-image {
+    height: 150px;
+    width: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#card-image:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 4px;
+}
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+    .blur-card {
+        margin: 10px;
+        width: 300px; /* Adjusted width for smaller screens */
+        height: 250px; /* Maintain height for consistency */
+    }
+}

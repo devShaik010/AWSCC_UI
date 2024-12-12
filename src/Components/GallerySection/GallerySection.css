@@ -1,0 +1,79 @@
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+
+.gallery-section {
+    min-height: 100vh;
+    padding: 80px 60px 0 60px;
+    padding-bottom: 30px;
+}
+
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-tag {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white    ;
+    margin-top: 15px;
+}
+
+.image-container {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: black;
+    border: none;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove default padding */
+}
+
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close-button-main {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .gallery-section {
+        padding: 80px 15px;
+    }
+
+    .gallery-tag {
+        font-size: 30px;
+    }
+}

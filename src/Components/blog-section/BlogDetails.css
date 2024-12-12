@@ -1,0 +1,72 @@
+.hrbox {
+    text-align: center;
+    margin: 20px 0; /* Add some vertical spacing */
+  }
+  
+.bheading
+{
+    margin-top: 10px;
+}
+  
+
+.blog-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 95%;
+}
+
+.blog-detail .blog-title {
+    font-size: 2.5rem;
+    color: #4b0082;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-detail .blog-content {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.blog-detail h2,
+.blog-detail h3,
+.blog-detail h4 {
+    color: #4b0082;
+}
+
+.blog-detail img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.blog-detail p {
+    margin-bottom: 15px;
+}
+
+.blog-detail ul,
+.blog-detail ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.blog-detail blockquote {
+    border-left: 4px solid #4b0082;
+    padding-left: 15px;
+    color: #333;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .blog-detail .blog-title {
+        font-size: 2rem;
+    }
+    .blog-detail .blog-content {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,251 @@
+.benefits-section {
+    padding: 100px 0;
+    position: relative;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.98));
+    overflow: hidden;
+}
+
+.benefits-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.light-effect {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+
+.le1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.15), rgba(79, 70, 229, 0));
+    top: -250px;
+    right: -250px;
+}
+
+.le2 {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.1), rgba(244, 63, 94, 0));
+    bottom: -300px;
+    left: -300px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.title-accent {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        rgba(124, 58, 237, 0),
+        rgba(124, 58, 237, 1) 50%,
+        rgba(124, 58, 237, 0)
+    );
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background: linear-gradient(90deg, #4F46E5, #7C3AED);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    line-height: 1.6;
+}
+
+.benefits-grid {
+    margin: 0 -1rem;
+}
+
+.benefit-col {
+    padding: 1rem;
+}
+
+.benefit-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 2rem;
+    height: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.icon-wrapper {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #4F46E5, #7C3AED);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.benefit-card h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.card-shapes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover .card-shapes {
+    opacity: 0.8;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.gradient-1 .shape-1 { background: #4F46E5; }
+.gradient-1 .shape-2 { background: #7C3AED; }
+.gradient-2 .shape-1 { background: #EC4899; }
+.gradient-2 .shape-2 { background: #8B5CF6; }
+.gradient-3 .shape-1 { background: #3B82F6; }
+.gradient-3 .shape-2 { background: #6366F1; }
+.gradient-4 .shape-1 { background: #10B981; }
+.gradient-4 .shape-2 { background: #6EE7B7; }
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    right: -20px;
+}
+
+.shape-2 {
+    width: 80px;
+    height: 80px;
+    bottom: -20px;
+    left: -20px;
+}
+
+.benefits-footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.gradient-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: linear-gradient(135deg, #4F46E5, #7C3AED);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 992px) {
+    .benefits-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .benefit-col {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .title-wrapper {
+        gap: 1rem;
+    }
+
+    .title-accent {
+        width: 40px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .benefits-grid {
+        margin: 0;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+    }
+
+    .icon-wrapper {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .benefit-card p {
+        font-size: 0.9rem;
+    }
+}
